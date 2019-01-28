@@ -1,0 +1,354 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="icon" href="/img/icon.png">
+    <link rel="stylesheet" href="/static/style.css">
+    <meta charset="utf-8" />
+    <title>ccArticulate</title>
+    <script src="/static/main.js" type="text/javascript"></script>
+</head>
+<body>
+    <img class='headPic' src="/img/logo.png" alt="headerPicture"/>
+
+    <div class="menu">
+        <div>
+            <h3>Home Campus: </h3>
+            <select aria-label="c-id_1colleges" class="drop" name="college_id" onchange="change_inst1(this.value)">
+                <option value="0">Click here to select an institution</option>
+                <option value="2556">Allan Hancock College </option>
+                <option value="2557">American River College </option>
+                <option value="2558">Antelope Valley College </option>
+                <option value="2559">Bakersfield College </option>
+                <option value="2560">Barstow Community College </option>
+                <option value="12834">Berkeley City College </option>
+                <option value="2561">Butte College </option>
+                <option value="2562">Cabrillo College </option>
+                <option value="2563">Canada College </option>
+                <option value="2565">Cerritos College </option>
+                <option value="2566">Cerro Coso Community College</option>
+                <option value="2567">Chabot College </option>
+                <option value="2568">Chaffey College </option>
+                <option value="2569">Citrus College </option>
+                <option value="2603">City College of San Francisco  </option>
+                <option value="12844">Clovis Community College </option>
+                <option value="2570">Coastline Community College </option>
+                <option value="2555">College of Alameda  </option>
+                <option value="2518">College of Marin  </option>
+                <option value="2606">College of San Mateo </option>
+                <option value="2564">College of the Canyons  </option>
+                <option value="2581">College of the Desert  </option>
+                <option value="2538">College of the Redwoods  </option>
+                <option value="2545">College of the Sequoias  </option>
+                <option value="2548">College of the Siskiyous  </option>
+                <option value="2571">Columbia College </option>
+                <option value="2572">Compton Community College </option>
+                <option value="2573">Contra Costa College </option>
+                <option value="2574">Copper Mountain College </option>
+                <option value="2575">Cosumnes River College </option>
+                <option value="2576">Crafton Hills College </option>
+                <option value="12744">Cuesta College </option>
+                <option value="2578">Cuyamaca College </option>
+                <option value="2579">Cypress College </option>
+                <option value="2580">De Anza College </option>
+                <option value="2582">Diablo Valley College </option>
+                <option value="2583">East Los Angeles College </option>
+                <option value="2584">El Camino College </option>
+                <option value="2585">Evergreen Valley College </option>
+                <option value="2586">Feather River College </option>
+                <option value="2613">Folsom Lake College </option>
+                <option value="2587">Foothill College </option>
+                <option value="2588">Fresno City College </option>
+                <option value="2589">Fullerton College </option>
+                <option value="2590">Gavilan College </option>
+                <option value="2591">Glendale Community College </option>
+                <option value="2592">Golden West College </option>
+                <option value="2593">Grossmont College </option>
+                <option value="2594">Hartnell College </option>
+                <option value="2503">Imperial Valley College </option>
+                <option value="2504">Irvine Valley College </option>
+                <option value="2505">Lake Tahoe Community College </option>
+                <option value="2506">Laney College </option>
+                <option value="2507">Las Positas College </option>
+                <option value="2508">Lassen Community College </option>
+                <option value="2509">Long Beach City College </option>
+                <option value="2510">Los Angeles City College </option>
+                <option value="2511">Los Angeles Harbor College </option>
+                <option value="2512">Los Angeles Mission College </option>
+                <option value="2513">Los Angeles Pierce College </option>
+                <option value="2514">Los Angeles Southwest College </option>
+                <option value="2515">Los Angeles Trade Technical College </option>
+                <option value="2516">Los Angeles Valley College </option>
+                <option value="2517">Los Medanos College</option>
+                <option value="2519">Mendocino College </option>
+                <option value="2520">Merced College </option>
+                <option value="2521">Merritt College </option>
+                <option value="2522">MiraCosta College </option>
+                <option value="2523">Mission College </option>
+                <option value="2524">Modesto Junior College </option>
+                <option value="2525">Monterey Peninsula College </option>
+                <option value="2526">Moorpark College </option>
+                <option value="2615">Moreno Valley College </option>
+                <option value="2527">Mt. San Antonio College </option>
+                <option value="2528">Mt. San Jacinto College </option>
+                <option value="2529">Napa Valley College </option>
+                <option value="2616">Norco College </option>
+                <option value="2531">Ohlone College </option>
+                <option value="2532">Orange Coast College </option>
+                <option value="2533">Oxnard College </option>
+                <option value="2535">Palomar College </option>
+                <option value="2534">Palo Verde College </option>
+                <option value="2536">Pasadena City College </option>
+                <option value="2537">Porterville College </option>
+                <option value="2539">Reedley College </option>
+                <option value="2540">Rio Hondo College </option>
+                <option value="2595">Riverside City College </option>
+                <option value="2596">Sacramento City College </option>
+                <option value="2597">Saddleback College </option>
+                <option value="2598">San Bernardino Valley College </option>
+                <option value="2599">San Diego City College </option>
+                <option value="2601">San Diego Mesa College </option>
+                <option value="2602">San Diego Miramar College </option>
+                <option value="2604">San Joaquin Delta College </option>
+                <option value="2605">San Jose City College </option>
+                <option value="2607">Santa Ana College </option>
+                <option value="2541">Santa Barbara City College </option>
+                <option value="2542">Santa Monica College </option>
+                <option value="2543">Santa Rosa Junior College </option>
+                <option value="2544">Santiago Canyon College </option>
+                <option value="2546">Shasta College </option>
+                <option value="2547">Sierra College </option>
+                <option value="2549">Skyline College </option>
+                <option value="2550">Solano Community College </option>
+                <option value="2551">Southwestern College </option>
+                <option value="2552">Taft College </option>
+                <option value="2553">Ventura College </option>
+                <option value="2554">Victor Valley College </option>
+                <option value="2614">West Hills College Coalinga </option>
+                <option value="2609">West Hills College Lemoore </option>
+                <option value="2610">West Los Angeles College </option>
+                <option value="2611">West Valley College </option>
+                <option value="12825">Woodland Community College </option>
+                <option value="2612">Yuba College </option>
+                
+
+            </select>
+        </div>
+        <div>
+            <h3>Find courses with: </h3>
+            <select aria-label="c-id_2colleges" class="drop" name="college_id" onchange="change_inst2(this.value)">
+                <option value="0">Click here to select an institution</option>
+                <option value="2556">Allan Hancock College </option>
+                <option value="2557">American River College </option>
+                <option value="2558">Antelope Valley College </option>
+                <option value="2559">Bakersfield College </option>
+                <option value="2560">Barstow Community College </option>
+                <option value="12834">Berkeley City College </option>
+                <option value="2561">Butte College </option>
+                <option value="2562">Cabrillo College </option>
+                <option value="2563">Canada College </option>
+                <option value="2565">Cerritos College </option>
+                <option value="2566">Cerro Coso Community College</option>
+                <option value="2567">Chabot College </option>
+                <option value="2568">Chaffey College </option>
+                <option value="2569">Citrus College </option>
+                <option value="2603">City College of San Francisco  </option>
+                <option value="12844">Clovis Community College </option>
+                <option value="2570">Coastline Community College </option>
+                <option value="2555">College of Alameda  </option>
+                <option value="2518">College of Marin  </option>
+                <option value="2606">College of San Mateo </option>
+                <option value="2564">College of the Canyons  </option>
+                <option value="2581">College of the Desert  </option>
+                <option value="2538">College of the Redwoods  </option>
+                <option value="2545">College of the Sequoias  </option>
+                <option value="2548">College of the Siskiyous  </option>
+                <option value="2571">Columbia College </option>
+                <option value="2572">Compton Community College </option>
+                <option value="2573">Contra Costa College </option>
+                <option value="2574">Copper Mountain College </option>
+                <option value="2575">Cosumnes River College </option>
+                <option value="2576">Crafton Hills College </option>
+                <option value="12744">Cuesta College </option>
+                <option value="2578">Cuyamaca College </option>
+                <option value="2579">Cypress College </option>
+                <option value="2580">De Anza College </option>
+                <option value="2582">Diablo Valley College </option>
+                <option value="2583">East Los Angeles College </option>
+                <option value="2584">El Camino College </option>
+                <option value="2585">Evergreen Valley College </option>
+                <option value="2586">Feather River College </option>
+                <option value="2613">Folsom Lake College </option>
+                <option value="2587">Foothill College </option>
+                <option value="2588">Fresno City College </option>
+                <option value="2589">Fullerton College </option>
+                <option value="2590">Gavilan College </option>
+                <option value="2591">Glendale Community College </option>
+                <option value="2592">Golden West College </option>
+                <option value="2593">Grossmont College </option>
+                <option value="2594">Hartnell College </option>
+                <option value="2503">Imperial Valley College </option>
+                <option value="2504">Irvine Valley College </option>
+                <option value="2505">Lake Tahoe Community College </option>
+                <option value="2506">Laney College </option>
+                <option value="2507">Las Positas College </option>
+                <option value="2508">Lassen Community College </option>
+                <option value="2509">Long Beach City College </option>
+                <option value="2510">Los Angeles City College </option>
+                <option value="2511">Los Angeles Harbor College </option>
+                <option value="2512">Los Angeles Mission College </option>
+                <option value="2513">Los Angeles Pierce College </option>
+                <option value="2514">Los Angeles Southwest College </option>
+                <option value="2515">Los Angeles Trade Technical College </option>
+                <option value="2516">Los Angeles Valley College </option>
+                <option value="2517">Los Medanos College</option>
+                <option value="2519">Mendocino College </option>
+                <option value="2520">Merced College </option>
+                <option value="2521">Merritt College </option>
+                <option value="2522">MiraCosta College </option>
+                <option value="2523">Mission College </option>
+                <option value="2524">Modesto Junior College </option>
+                <option value="2525">Monterey Peninsula College </option>
+                <option value="2526">Moorpark College </option>
+                <option value="2615">Moreno Valley College </option>
+                <option value="2527">Mt. San Antonio College </option>
+                <option value="2528">Mt. San Jacinto College </option>
+                <option value="2529">Napa Valley College </option>
+                <option value="2616">Norco College </option>
+                <option value="2531">Ohlone College </option>
+                <option value="2532">Orange Coast College </option>
+                <option value="2533">Oxnard College </option>
+                <option value="2535">Palomar College </option>
+                <option value="2534">Palo Verde College </option>
+                <option value="2536">Pasadena City College </option>
+                <option value="2537">Porterville College </option>
+                <option value="2539">Reedley College </option>
+                <option value="2540">Rio Hondo College </option>
+                <option value="2595">Riverside City College </option>
+                <option value="2596">Sacramento City College </option>
+                <option value="2597">Saddleback College </option>
+                <option value="2598">San Bernardino Valley College </option>
+                <option value="2599">San Diego City College </option>
+                <option value="2601">San Diego Mesa College </option>
+                <option value="2602">San Diego Miramar College </option>
+                <option value="2604">San Joaquin Delta College </option>
+                <option value="2605">San Jose City College </option>
+                <option value="2607">Santa Ana College </option>
+                <option value="2541">Santa Barbara City College </option>
+                <option value="2542">Santa Monica College </option>
+                <option value="2543">Santa Rosa Junior College </option>
+                <option value="2544">Santiago Canyon College </option>
+                <option value="2546">Shasta College </option>
+                <option value="2547">Sierra College </option>
+                <option value="2549">Skyline College </option>
+                <option value="2550">Solano Community College </option>
+                <option value="2551">Southwestern College </option>
+                <option value="2552">Taft College </option>
+                <option value="2553">Ventura College </option>
+                <option value="2554">Victor Valley College </option>
+                <option value="2614">West Hills College Coalinga </option>
+                <option value="2609">West Hills College Lemoore </option>
+                <option value="2610">West Los Angeles College </option>
+                <option value="2611">West Valley College </option>
+                <option value="12825">Woodland Community College </option>
+                <option value="2612">Yuba College </option>
+                
+
+            </select>
+        </div>
+
+        <div> <h3>Filter by Major:</h3>
+            <select aria-label="c-id course disciplines" class="drop" id="discipline_id" onchange="change_major(this.value)">
+                <option value="0">All Major Coursework</option>
+                <option value="23">Accounting </option>
+                <option value="53">Addiction Studies - CCC </option>
+                <option value="18">Administration of Justice </option>
+                <option value="1">Agriculture (219)</option>
+                <option value="67">Alternative Fuels and Advanced Transportation Technology - CCC </option>
+                <option value="33">Anthropology </option>
+                <option value="16">Art History </option>
+                <option value="52">Automotive Technology - CCC </option>
+                <option value="2">Biology </option>
+                <option value="50">Biotechnology - CCC </option>
+                <option value="24">Business </option>
+                <option value="3">Chemistry </option>
+                <option value="27">Child Development </option>
+                <option value="55">Commercial Music - CCC </option>
+                <option value="17">Communication Studies </option>
+                <option value="28">Computer Science </option>
+                <option value="4">Early Childhood Education </option>
+                <option value="39">Economics </option>
+                <option value="31">Education </option>
+                <option value="51">Emergency Medical Services - CCC </option>
+                <option value="32">Engineering </option>
+                <option value="5">English </option>
+                <option value="36">Film, Television and Electronic Media </option>
+                <option value="66">Fire Technology - CCC </option>
+                <option value="15">Geography </option>
+                <option value="12">Geology </option>
+                <option value="59">Global Studies - AOE </option>
+                <option value="74">Health Information Technology - CCC </option>
+                <option value="6">History </option>
+                <option value="93">Hospitality - CCC </option>
+                <option value="48">Hospitality Management </option>
+                <option value="29">Information Technology and Information Systems </option>
+                <option value="35">Journalism </option>
+                <option value="21">Kinesiology </option>
+                <option value="83">Law, Public Policy, and Society </option>
+                <option value="22">Mathematics </option>
+                <option value="30">Music </option>
+                <option value="46">Nutrition/Dietetics </option>
+                <option value="94">Office Technology / Business Information Worker - CCC </option>
+                <option value="7">Philosophy </option>
+                <option value="8">Physics </option>
+                <option value="9">Political Science </option>
+                <option value="10">Psychology </option>
+                <option value="58">Public Health Science </option>
+                <option value="60">Social Justice Studies - AOE </option>
+                <option value="11">Sociology </option>
+                <option value="37">Spanish </option>
+                <option value="25">Studio Arts </option>
+                <option value="13">Theatre </option>
+            </select>
+        </div>
+
+        <input type="button" onclick="submit()" id="SUBMIT" value="SUBMIT" />
+    </div>
+
+
+
+    <div id="table">
+        <div class="le">
+            <div id="a">
+
+                {% if inst1 %}
+                <h1>{{ inst1 }}</h1>
+
+                {% endif %}
+
+                <!–– course info -->
+
+                {% for item in similar_course_info %}
+                <div id="data">{{ item.c1num }} - {{item.c1course}}</div>
+                {% endfor %}
+            </div>
+            <div id="b">
+
+                {% if inst2 %}
+                <h1>{{ inst2 }}</h1>
+
+                {% endif %}
+
+                <!–– course info -->
+
+                {% for item in similar_course_info %}
+                <div id="data">{{ item.c2num }} - {{item.c2course}}</div>
+                {% endfor %}
+            </div>
+
+        </div>
+    </div>
+</body>
+
+
+</html>
